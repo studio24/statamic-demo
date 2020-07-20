@@ -2,7 +2,7 @@ title: News
 sites:
   - default
   - fr
-template: default
+template: news
 layout: layout
 blueprints:
   - news
@@ -12,7 +12,7 @@ taxonomies:
 revisions: false
 route:
   default: '/news/{slug}'
-  fr: '/actualites/{slug}'
+  fr: '/actualities/{slug}'
 date: true
 sort_dir: desc
 default_status: draft

@@ -1,6 +1,7 @@
 <h2>{{ display_title }}</h2>
 <p>{{ trans:template_strings.published_on }} {{ date format="d/m/Y" }}, {{ trans:template_strings.updated_on }} {{ last_modified format="d/m/Y" }}</p>
 <div>
+    <p>{{ page_intro }}</p>
     {{components}}
         {{ if type === 'text' }}
             <h4>{{ title }}</h4>
