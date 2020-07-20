@@ -1,0 +1,21 @@
+title: Pages
+sites:
+  - default
+  - fr
+template: default
+layout: layout
+blueprints:
+  - default
+  - global
+revisions: false
+route: '{parent_uri}/{slug}'
+sort_dir: asc
+structure:
+  root: true
+  tree:
+    default:
+      -
+        entry: home
+      -
+        entry: b5f5bd6b-d0ad-47b0-a906-8314db076b1c
+    fr: {  }

@@ -1,0 +1,72 @@
+title: Components
+fields:
+  -
+    handle: components
+    field:
+      sets:
+        text:
+          display: Text
+          fields:
+            -
+              handle: title
+              field:
+                input_type: text
+                type: text
+                localizable: true
+                listable: hidden
+                display: Title
+            -
+              handle: content
+              field:
+                restrict: false
+                automatic_line_breaks: true
+                automatic_links: false
+                escape_markup: false
+                smartypants: false
+                type: markdown
+                localizable: true
+                listable: hidden
+                display: Content
+        image:
+          display: Image
+          fields:
+            -
+              handle: image
+              field:
+                mode: grid
+                restrict: false
+                allow_uploads: true
+                type: assets
+                localizable: false
+                listable: hidden
+                display: Image
+            -
+              handle: image_credit
+              field:
+                input_type: text
+                type: text
+                localizable: false
+                listable: hidden
+                display: 'Image credit'
+        video:
+          display: Video
+          fields:
+            -
+              handle: title
+              field:
+                input_type: text
+                type: text
+                localizable: true
+                listable: hidden
+                display: Title
+            -
+              handle: video
+              field:
+                type: video
+                localizable: true
+                listable: hidden
+                display: Video
+      type: replicator
+      localizable: true
+      listable: hidden
+      display: Components

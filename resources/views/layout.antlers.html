@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="{{ site_short_locale }}">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{ title ?? site_name }}</title>
+        <link rel="stylesheet" href="{{ mix src='css/tailwind.css' }}">
+        <script src="{{ mix src='/js/site.js' }}"></script>
+    </head>
+    <body>
+        <header class="px-2">
+            <div class="flex">
+                <h1>{{ trans:template_strings.site_title }}</h1>
+            <ul>
+                {{ locales }}
+                <li><b><a href="{{ url }}">{{ locale:name }}</a></b></li>
+                {{ /locales }}
+            </ul>
+            </div>
+            <ul>
+                {{ nav:main_navigation }}
+                <li><b><a href="{{ url }}">{{ page_heading }}</a></b></li>
+                {{ /nav:main_navigation }}
+            </ul>
+        </header>
+        <div class="px-2">
+            {{ template_content }}
+        </div>
+        <footer class="px-2">
+            <h4>Footer content</h4>
+            {{ address.content }}
+        </footer>
+    </body>
+</html>

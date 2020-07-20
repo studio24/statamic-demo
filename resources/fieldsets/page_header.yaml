@@ -1,0 +1,25 @@
+title: 'Page header'
+fields:
+  -
+    handle: display_title
+    field:
+      input_type: text
+      character_limit: 100
+      type: text
+      instructions: 'The title that will be displayed at the top of the page'
+      localizable: true
+      listable: true
+      display: 'Display title'
+  -
+    handle: page_intro
+    field:
+      restrict: false
+      automatic_line_breaks: true
+      automatic_links: false
+      escape_markup: false
+      smartypants: false
+      type: markdown
+      instructions: 'Short page intro displayed under the title'
+      localizable: true
+      listable: hidden
+      display: 'Page intro'

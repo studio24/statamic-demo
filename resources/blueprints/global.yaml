@@ -1,0 +1,12 @@
+title: Global
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: content
+        field:
+          type: textarea
+          localizable: true
+          listable: hidden
+          display: Content

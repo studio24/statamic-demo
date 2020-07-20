@@ -1,0 +1,12 @@
+title: News
+header_display_title: News
+author: f2005216-fadc-4471-9db9-b38e80cae9f5
+updated_by: f2005216-fadc-4471-9db9-b38e80cae9f5
+updated_at: 1595246222
+blueprint: default
+localizations:
+  fr:
+    page_heading: Actualite
+    updated_by: f2005216-fadc-4471-9db9-b38e80cae9f5
+    updated_at: 1595246215
+page_heading: News

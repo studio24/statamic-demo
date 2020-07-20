@@ -1,0 +1,21 @@
+title: News
+sites:
+  - default
+  - fr
+template: default
+layout: layout
+blueprints:
+  - news
+mount: b5f5bd6b-d0ad-47b0-a906-8314db076b1c
+taxonomies:
+  - categories
+revisions: false
+route:
+  default: '/news/{slug}'
+  fr: '/actualites/{slug}'
+date: true
+sort_dir: desc
+default_status: draft
+date_behavior:
+  past: public
+  future: private

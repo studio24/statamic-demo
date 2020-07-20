@@ -1,0 +1,16 @@
+<h2>{{ display_title }}</h2>
+<p>{{ trans:template_strings.published_on }} {{ date format="d/m/Y" }}, {{ trans:template_strings.updated_on }} {{ last_modified format="d/m/Y" }}</p>
+<div>
+    {{components}}
+        {{ if type === 'text' }}
+            <h4>{{ title }}</h4>
+            {{ content }}
+        {{ elseif type === 'image' }}
+            <img src="{{ image.0 }}" width="400" height="250" />
+            <p>{{ image_credit }}</p>
+        {{ elseif type === 'video' }}
+            <h4>{{ title }}</h4>
+            <iframe src="{{ video }}?portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        {{ /if }}
+    {{/components}}
+</div>

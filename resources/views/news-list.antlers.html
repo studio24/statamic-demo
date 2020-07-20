@@ -1,0 +1,15 @@
+<h2>{{ page_heading }}</h2>
+
+<div>
+{{ content }}
+</div>
+
+<div>
+    <h3>{{ trans:template_strings.latest_articles }}</h3>
+
+    <ul>
+    {{ collection:news }}
+        <li><b><a href="{{ url }}">{{ display_title }}</a></b>, {{ trans:template_strings.published_on }} {{ date format="d/m/Y" }}</li>
+    {{ /collection:news }}
+    </ul>
+</div>

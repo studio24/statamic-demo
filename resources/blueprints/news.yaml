@@ -1,0 +1,12 @@
+title: News
+sections:
+  header:
+    display: Header
+    fields:
+      -
+        import: page_header
+  main:
+    display: Main
+    fields:
+      -
+        import: components
