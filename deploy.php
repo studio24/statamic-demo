@@ -32,7 +32,7 @@ set('keep_releases', 10);
 task('deploy:s24:composer',function(){
     cd('{{release_path}}');
     run('composer install');
-    run('chmod 755 -R storage');
+    run('chmod 777 -R storage');
 });
 
 // Hosts
