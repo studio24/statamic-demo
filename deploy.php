@@ -17,7 +17,8 @@ set('http_user', 'apache');
 // Shared files/dirs between deploys
 set('shared_files', ['.env']);
 set('shared_dirs', [
-    'public/assets'
+    'public/assets',
+    'storage'
 ]);
 
 // Writable dirs by web server
