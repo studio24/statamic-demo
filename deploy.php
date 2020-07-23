@@ -15,7 +15,7 @@ set('git_tty', true);
 set('http_user', 'apache');
 
 // Shared files/dirs between deploys
-set('shared_files', ['.env']);
+set('shared_files', ['.env','config/statamic/protect.php']);
 set('shared_dirs', [
     'public/assets'
 ]);
