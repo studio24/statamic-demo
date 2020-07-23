@@ -1,9 +1,28 @@
-contributor:
-  title: Contributor
+editor:
+  title: Editor
   permissions:
     - 'access cp'
+    - 'view news entries'
+    - 'edit news entries'
+    - 'create news entries'
+    - 'delete news entries'
+    - 'publish news entries'
+    - 'reorder news entries'
     - 'view pages entries'
     - 'edit pages entries'
     - 'create pages entries'
+    - 'delete pages entries'
+    - 'publish pages entries'
+    - 'reorder pages entries'
+    - 'edit address globals'
+    - 'view categories terms'
+    - 'edit categories terms'
+    - 'create categories terms'
+    - 'delete categories terms'
     - 'view assets assets'
     - 'upload assets assets'
+    - 'edit assets assets'
+    - 'move assets assets'
+    - 'rename assets assets'
+    - 'delete assets assets'
+    - 'configure forms'
