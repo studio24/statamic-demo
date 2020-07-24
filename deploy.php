@@ -12,7 +12,7 @@ set('repository', 'git@github.com:studio24/statamic-demo.git');
 
 // [Optional] Allocate tty for git clone. Default value is false.
 set('git_tty', true);
-set('http_user', 'apache');
+set('http_user', 'www-data');
 
 // Shared files/dirs between deploys
 set('shared_files', ['.env','config/statamic/protect.php']);
@@ -21,7 +21,7 @@ set('shared_dirs', [
 ]);
 
 // Writable dirs by web server
-set('writable_dirs', ['']);
+set('writable_dirs', ['content', 'resources', 'public/assets', 'users']);
 set('allow_anonymous_stats', false);
 
 // Custom
